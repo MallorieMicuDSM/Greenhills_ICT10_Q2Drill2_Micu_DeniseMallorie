@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Candidate Verification System</title>
+    
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            min-height: 100vh;
+            flex-direction: column;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #fee6ff;
+        }
+       
+        form {
+            width: 320px;
+            padding: 25px;
+
+            background-color: white;
+            border-radius: 20px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        text_style {
+            text-align: center;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div id="text_style">
+        <h1>OBMC Volleyball Varsity Checker</h1>
+    </div>
+
+      <form>
+    <h1>First Name</h1>
+    <br>
+        <input type="text" id="student_firstname" placeholder="e.g. Denise" style="font-family: Tahoma;">
+        <br>
+        <br>
+    <h1>Last Name</h1>
+    <br>
+        <input type="text" id="student_lastname" placeholder="e.g. Micu" style="font-family: Tahoma;">
+        <br>
+        <br>
+        <input type="button" py-click="student_candidate" value="Search" style="font-family: 'Pacifico', cursive;">
+    </form>
+<br>
+<br>
+    <div id="output" style="width: 320px; padding: 25px; background-color: white; border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); text-align: center; font-family: Tahoma;"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
